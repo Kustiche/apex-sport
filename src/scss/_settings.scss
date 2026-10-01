@@ -1,0 +1,39 @@
+html {
+	height: 100%;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	height: 100%;
+	font-family: OpenSans, sans-serif;
+	font-weight: 400;
+	color: var(--black-color);
+	background-color: var(--light-color);
+}
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.list-reset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.btn-reset {
+	border: none;
+	padding: 0;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+}
