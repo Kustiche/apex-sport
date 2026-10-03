@@ -165,3 +165,53 @@
 		}
 	}
 }
+
+.introduction {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	margin-bottom: 60px;
+	max-width: 450px;
+
+	&__caption {
+		position: relative;
+		margin: 0;
+		margin-bottom: 20px;
+		padding-left: 50px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 38px;
+		text-transform: uppercase;
+
+		&::after {
+			position: absolute;
+			content: '';
+			width: 38px;
+			border-top: 4px solid var(--melrose-color);
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+		}
+	}
+
+	&__text {
+		margin: 0;
+		font-size: 18px;
+		color: var(--scorpion-color);
+	}
+}
+
+.btn {
+	border-radius: 10px;
+	padding: 18px 40px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	color: var(--light-color);
+	background-color: var(--burnt-color);
+	transition: color 0.4s;
+
+	&:hover {
+		color: var(--black-color);
+	}
+}
