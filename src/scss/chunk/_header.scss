@@ -78,18 +78,4 @@
 		width: 34px;
 		height: 34px;
 	}
-
-	&__link {
-		padding: 15px 20px;
-		font-family: 'Montserrat', sans-serif;
-		font-weight: 600;
-		border-radius: 5px;
-		color: var(--light-color);
-		background-color: var(--heliotrope-color);
-		transition: color 0.4s;
-
-		&:hover {
-			color: var(--black-color);
-		}
-	}
 }
