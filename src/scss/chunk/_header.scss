@@ -1,0 +1,57 @@
+.header {
+	position: relative;
+	padding-top: 25px;
+	padding-bottom: 45px;
+
+	&::before {
+		position: absolute;
+		content: '';
+		width: 100%;
+		bottom: 20%;
+		left: 0;
+		border-top: 1px solid var(--alto-color);
+	}
+
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+	}
+
+	&__messengers {
+		gap: 10px;
+	}
+
+	&__messenger-link {
+		transition: opacity 0.4s;
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+
+	&__messenger-icon {
+		width: 34px;
+		height: 34px;
+	}
+
+	&__link {
+		padding: 15px 20px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		border-radius: 5px;
+		color: var(--light-color);
+		background-color: var(--heliotrope-color);
+		transition: color 0.4s;
+
+		&:hover {
+			color: var(--black-color);
+		}
+	}
+}
