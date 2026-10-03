@@ -3,6 +3,10 @@
 	padding-top: 25px;
 	padding-bottom: 45px;
 
+	@media (max-width: 992px) {
+		padding-bottom: 25px;
+	}
+
 	&::before {
 		position: absolute;
 		content: '';
@@ -10,6 +14,10 @@
 		bottom: 20%;
 		left: 0;
 		border-top: 1px solid var(--alto-color);
+	}
+	.container {
+		margin: 0 auto;
+		max-width: 1390px;
 	}
 
 	&__wrap {

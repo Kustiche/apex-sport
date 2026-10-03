@@ -2,16 +2,36 @@
 	padding-top: 45px;
 	padding-bottom: 80px;
 
-	.container {
-		max-width: 780px;
-		margin: 0;
-		margin-left: 90px;
+	@media (max-width: 768px) {
+		padding-top: 25px;
+		padding-bottom: 40px;
 	}
 
 	&__wrap {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+
+		@media (max-width: 1400px) {
+			max-width: 665px;
+		}
+
+		@media (max-width: 1200px) {
+			max-width: 500px;
+		}
+
+		@media (max-width: 992px) {
+			margin: 0 auto;
+			max-width: 620px;
+		}
+
+		@media (max-width: 768px) {
+			max-width: 470px;
+		}
+
+		@media (max-width: 576px) {
+			align-items: center;
+		}
 	}
 
 	&__inner {
@@ -22,6 +42,15 @@
 		padding: 50px;
 		border-radius: 30px;
 		background-color: var(--titan-color);
+
+		@media (max-width: 768px) {
+			margin-bottom: 25px;
+			padding: 25px;
+		}
+
+		@media (max-width: 576px) {
+			align-items: center;
+		}
 	}
 
 	&__title {
@@ -31,6 +60,27 @@
 		font-weight: 800;
 		font-size: 52px;
 		color: var(--god-gray-color);
+
+		@media (max-width: 1400px) {
+			font-size: 46px;
+		}
+
+		@media (max-width: 1200px) {
+			font-size: 32px;
+		}
+
+		@media (max-width: 1200px) {
+			font-size: 42px;
+		}
+
+		@media (max-width: 768px) {
+			font-size: 34px;
+		}
+
+		@media (max-width: 576px) {
+			text-align: center;
+			font-size: 24px;
+		}
 
 		span {
 			color: var(--burnt-color);
@@ -43,11 +93,33 @@
 		max-width: 425px;
 		font-size: 18px;
 		color: var(--god-gray-color);
+
+		@media (max-width: 1200px) {
+			font-size: 16px;
+		}
+
+		@media (max-width: 576px) {
+			margin-bottom: 15px;
+			text-align: center;
+		}
 	}
 
 	&__buttons {
 		display: flex;
 		gap: 30px;
+
+		@media (max-width: 576px) {
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		a {
+			text-align: center;
+
+			@media (max-width: 1200px) {
+				padding: 15px 10px;
+			}
+		}
 	}
 
 	&__link {
@@ -62,6 +134,14 @@
 		margin-bottom: 150px;
 		padding-left: 17px;
 		gap: 10px;
+
+		@media (max-width: 1200px) {
+			margin-bottom: 75px;
+		}
+
+		@media (max-width: 768px) {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__item {
@@ -85,7 +165,7 @@
 	&__links {
 		display: flex;
 		align-items: center;
-		gap: 20px;
+		gap: 10px;
 
 		a {
 			display: flex;
@@ -98,6 +178,13 @@
 			&:hover {
 				color: var(--coral-color);
 			}
+		}
+	}
+
+	&__links {
+		@media (max-width: 576px) {
+			display: flex;
+			flex-direction: column;
 		}
 	}
 

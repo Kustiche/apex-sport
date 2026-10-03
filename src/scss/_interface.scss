@@ -2,12 +2,6 @@
 	padding: 60px 0 60px 0;
 }
 
-.header {
-	.container {
-		max-width: 1390px;
-	}
-}
-
 .logo {
 	display: flex;
 
@@ -119,6 +113,14 @@
 	max-width: 295px;
 	box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.07);
 	background-color: var(--titan-color);
+
+	@media (max-width: 1200px) {
+		right: 90px;
+	}
+
+	@media (max-width: 992px) {
+		display: none;
+	}
 
 	&__list {
 		display: flex;
