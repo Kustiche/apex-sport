@@ -1,10 +1,30 @@
 .stages {
 	padding-top: 80px;
 
+	@media (max-width: 768px) {
+		padding-top: 40px;
+	}
+
 	&__wrap {
 		display: flex;
 		flex-direction: column;
 		align-items: start;
+
+		@media (max-width: 992px) {
+			align-items: center;
+		}
+	}
+
+	&__introduction {
+		margin-bottom: 60px;
+
+		@media (max-width: 992px) {
+			margin-bottom: 40px;
+		}
+
+		@media (max-width: 576px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__inner {
@@ -20,10 +40,24 @@
 			content: '';
 			left: 41px;
 			top: 50%;
-			height: 927px;
+			height: 90%;
 			border-left: 6px dashed var(--melrose-color);
 			transform: translateY(-50%);
 			z-index: -1;
+
+			@media (max-width: 992px) {
+				display: none;
+			}
+		}
+
+		@media (max-width: 1400px) {
+			align-items: center;
+			max-width: 690px;
+		}
+
+		@media (max-width: 1200px) {
+			max-width: 520px;
+			gap: 25px;
 		}
 	}
 
@@ -32,6 +66,12 @@
 		justify-content: space-between;
 		align-items: center;
 		gap: 35px;
+
+		@media (max-width: 992px) {
+			flex-direction: column;
+			width: 100%;
+			gap: 15px;
+		}
 	}
 
 	&__background-number {
@@ -41,7 +81,13 @@
 		border-radius: 100%;
 		width: 87px;
 		height: 87px;
+		flex-shrink: 0;
 		background-color: var(--melrose-color);
+
+		@media (max-width: 768px) {
+			width: 70px;
+			height: 70px;
+		}
 	}
 
 	&__number {
@@ -49,11 +95,20 @@
 		font-weight: 600;
 		font-size: 40px;
 		color: var(--light-color);
+
+		@media (max-width: 768px) {
+			font-size: 30px;
+		}
 	}
 
 	&__icon {
 		width: 67px;
 		height: 77px;
+		flex-shrink: 0;
+
+		@media (max-width: 992px) {
+			display: none;
+		}
 	}
 
 	&__content {
@@ -67,17 +122,38 @@
 		font-weight: 600;
 		font-size: 24px;
 		color: var(--god-gray-color);
+
+		@media (max-width: 1200px) {
+			font-size: 22px;
+		}
+
+		@media (max-width: 992px) {
+			text-align: center;
+		}
 	}
 
 	&__content-text {
 		margin: 0;
 		font-size: 20px;
 		color: var(--scorpion-color);
+
+		@media (max-width: 992px) {
+			text-align: center;
+		}
 	}
 
 	&__form {
 		display: flex;
 		align-items: center;
+
+		@media (max-width: 1200px) {
+			flex-direction: column;
+			gap: 15px;
+		}
+
+		@media (max-width: 992px) {
+			width: 100%;
+		}
 	}
 
 	&__input {
@@ -88,5 +164,25 @@
 		width: 340px;
 		height: 60px;
 		font-size: 20px;
+
+		@media (max-width: 1400px) {
+			width: 275px;
+		}
+
+		@media (max-width: 1200px) {
+			margin-right: 0;
+			width: 100%;
+		}
+
+		@media (max-width: 768px) {
+			height: 40px;
+			font-size: 16px;
+		}
+	}
+
+	&__btn {
+		@media (max-width: 1200px) {
+			width: 100%;
+		}
 	}
 }

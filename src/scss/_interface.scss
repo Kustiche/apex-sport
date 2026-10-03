@@ -1,5 +1,9 @@
 .section {
-	padding: 60px 0 60px 0;
+	padding: 60px 0;
+
+	@media (max-width: 768px) {
+		padding: 30px 0;
+	}
 }
 
 .logo {
@@ -170,8 +174,11 @@
 	display: flex;
 	flex-direction: column;
 	align-items: start;
-	margin-bottom: 60px;
 	max-width: 450px;
+
+	@media (max-width: 992px) {
+		align-items: center;
+	}
 
 	&__caption {
 		position: relative;
@@ -191,6 +198,19 @@
 			top: 50%;
 			left: 0;
 			transform: translateY(-50%);
+
+			@media (max-width: 992px) {
+				display: none;
+			}
+		}
+
+		@media (max-width: 1200px) {
+			font-size: 28px;
+		}
+
+		@media (max-width: 992px) {
+			margin-bottom: 10px;
+			padding-left: 0;
 		}
 	}
 
@@ -198,6 +218,10 @@
 		margin: 0;
 		font-size: 18px;
 		color: var(--scorpion-color);
+
+		@media (max-width: 992px) {
+			text-align: center;
+		}
 	}
 }
 
@@ -213,5 +237,10 @@
 
 	&:hover {
 		color: var(--black-color);
+	}
+
+	@media (max-width: 768px) {
+		padding: 10px 20px;
+		font-size: 18px;
 	}
 }
