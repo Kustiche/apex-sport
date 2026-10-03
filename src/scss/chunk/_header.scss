@@ -18,17 +18,55 @@
 		align-items: center;
 	}
 
+	&__nav {
+		@media (max-width: 768px) {
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 20px;
+			padding-top: 20px;
+			width: 100vw;
+			top: -100vh;
+			height: 100vh;
+			left: 50%;
+			transform: translateX(-50%);
+			background: rgba(254, 254, 254, 0.5);
+			opacity: 0;
+			transition: all 0.4s;
+		}
+
+		&.active {
+			opacity: 100%;
+			top: 80%;
+		}
+	}
+
 	&__inner {
 		display: flex;
 		align-items: center;
 		gap: 15px;
+
+		@media (max-width: 768px) {
+			display: none;
+		}
+
+		&--mobile {
+			display: none;
+
+			@media (max-width: 768px) {
+				display: flex;
+			}
+		}
 	}
 
 	&__messengers {
+		display: flex;
 		gap: 10px;
 	}
 
 	&__messenger-link {
+		line-height: 0;
 		transition: opacity 0.4s;
 
 		&:hover {

@@ -21,13 +21,34 @@
           </a>
         </div>
 
-        <nav class="nav">
+        <button class="burger btn-reset">
+          <span class="burger__line"></span>
+        </button>
+
+        <nav class="header__nav nav">
           <ul class="menu list-reset">
             <li class="menu__item"><a class="menu__link link-reset" href="#">Главная</a></li>
             <li class="menu__item"><a class="menu__link link-reset" href="#">Каталог</a></li>
             <li class="menu__item"><a class="menu__link link-reset" href="#">Отзывы</a></li>
             <li class="menu__item"><a class="menu__link link-reset" href="#">Контакты</a></li>
           </ul>
+
+          <div class="header__inner header__inner--mobile">
+            <div class="header__messengers">
+              <a href="" class="header__messenger-link link-reset">
+                <svg class="header__messenger-icon">
+                  <use href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+              <a href="" class="header__messenger-link link-reset">
+                <svg class="header__messenger-icon">
+                  <use href="img/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </div>
+
+            <a class="header__link link-reset" href="#">Связаться</a>
+          </div>
         </nav>
 
         <div class="header__inner">
