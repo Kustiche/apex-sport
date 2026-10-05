@@ -31,19 +31,18 @@
 		text-align: center;
 	}
 
-	&__btn {
+	&__link {
 		display: flex;
 		align-items: center;
-		padding: 15px 20px;
-		width: 366px;
-		fill: var(--light-color);
+		border-radius: 10px;
 		gap: 15px;
+		font-size: 20px;
+		background-color: var(--burnt-color);
+		fill: var(--light-color);
 		transition: all 0.4s;
 
 		&:hover {
-			color: var(--black-color);
-
-			&.estimate__btn {
+			&.estimate__link {
 				fill: var(--black-color);
 			}
 		}
